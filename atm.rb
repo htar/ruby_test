@@ -1,7 +1,6 @@
 require 'yaml'
 
-config = YAML.load_file('./config.yml')
-
+config = YAML.load_file(ARGV.first || './config.yml')
 
 class App
 # initialize data
